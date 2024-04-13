@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import {ref} from "vue";
+
+const year = ref(new Date().getFullYear());
+</script>
 <template>
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <footer class="py-3 my-4">
@@ -16,9 +21,3 @@
     </footer>
   </div>
 </template>
-
-<script setup lang="ts">
-import {ref} from "vue";
-
-const year = ref(new Date().getFullYear());
-</script>

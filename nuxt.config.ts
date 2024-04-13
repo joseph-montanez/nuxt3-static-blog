@@ -22,7 +22,9 @@ export default defineNuxtConfig({
             htmlAttrs: {
                 lang: 'en',
             },
-            script: [
+            //-- If you use experimentalNoScripts, then nuxt-gtag plugin does not work. Here is an alternative for
+            // Google Analytics
+            script: (experimentalNoScripts) ? [
                 {
                     src: 'https://www.googletagmanager.com/gtag/js?id=' + gTagId,
                     async: true,
@@ -30,14 +32,14 @@ export default defineNuxtConfig({
                 {
                     hid: 'gtag-inline',
                     innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${gTagId}');
-        `,
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${gTagId}');
+                    `,
                     type: 'text/javascript'
                 }
-            ],
+            ] : [],
         }
     },
     image: {

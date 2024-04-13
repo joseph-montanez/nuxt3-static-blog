@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <Head>
     <Title>Alex Mercer</Title>
@@ -16,7 +18,7 @@
   </NuxtLayout>
 </template>
 
-<style>
+<style scoped>
 .hero {
   position: relative;
   width: 100%;
@@ -45,8 +47,4 @@
   object-fit: cover;
   transform: translate(-50%, -50%);
 }
-
-
 </style>
-<script setup lang="ts">
-</script>

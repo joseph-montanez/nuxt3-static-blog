@@ -1,17 +1,3 @@
-<template>
-  <NuxtLink
-      :href="href"
-      v-bind="rest"
-      :class="[
-      'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
-      computedClasses,
-      className
-    ]"
-  >
-    <slot/>
-  </NuxtLink>
-</template>
-
 <script setup lang="ts">
 import {computed, toRefs, useAttrs} from 'vue';
 
@@ -64,3 +50,16 @@ const computedClasses = computed(() => {
   ]);
 });
 </script>
+<template>
+  <NuxtLink
+      :href="href"
+      v-bind="rest"
+      :class="[
+      'rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200',
+      computedClasses,
+      className
+    ]"
+  >
+    <slot/>
+  </NuxtLink>
+</template>

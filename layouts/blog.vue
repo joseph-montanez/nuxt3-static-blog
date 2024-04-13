@@ -45,15 +45,5 @@ const props = useAttrs()
   </Container>
   <Footer/>
 </template>
-<style>
-/* Improve Page speed */
-/* https://css-tricks.com/almanac/properties/c/content-visibility/ */
-img {
-  content-visibility: auto;
-}
-
-/* Avoid Alpine.js Hidden Element Flash */
-[x-cloak] {
-  display: none;
-}
+<style scoped>
 </style>

@@ -20,7 +20,7 @@
     </NuxtLayout>
   </ContentDoc>
 </template>
-<style>
+<style> /** Cannot use scoped CSS with Tailwind's @apply */
 .markdown-content h1 {
   @apply text-4xl mt-5 font-bold text-gray-900;
 }

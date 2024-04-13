@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <Head>
     <Title>About Me</Title>
@@ -72,9 +74,5 @@
     </Container>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-</script>
-
 <style scoped>
 </style>

@@ -1,3 +1,5 @@
+<script setup lang="ts">
+</script>
 <template>
   <Head>
     <Title>Contact</Title>
@@ -56,39 +58,5 @@
     </Container>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-const team = [
-  {
-    name: "Janette Lynch",
-    title: "Senior Director",
-    avatar: {
-      src: "https://source.unsplash.com/IF9TK5Uy-KI",
-      width: 480,
-      height: 560,
-    },
-  },
-  {
-    name: "Marcell Ziemann",
-    title: "Principal Strategist",
-    avatar: {
-      src: "https://source.unsplash.com/iEEBWgY_6lA",
-      width: 580,
-      height: 580,
-    },
-  },
-  {
-    name: "Robert Palmer",
-    title: "Marketing Engineer",
-    avatar: {
-      src: "https://source.unsplash.com/ZHvM3XIOHoE",
-      width: 580,
-      height: 580,
-    },
-  },
-];
-</script>
-
 <style scoped>
-/* Add any additional styles here */
 </style>
