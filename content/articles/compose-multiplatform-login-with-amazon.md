@@ -15,14 +15,14 @@ for **Compose 1.6 Multiplatform** and **Amazon SDK 3**.
 
 ::SideBySideImages
 #image1
-![Login with Amazon Animation - Android](/images/articles/compose-multiplatform-login-with-amazon/ezgif-4-98daaeb372.gif)
+![Login with Amazon Animation - Android](/images/articles/compose-multiplatform-login-with-amazon/ezgif-4-98daaeb372.gif){quality="80" sizes="100vw sm:50vw md:400px lg:800px" preload}
 #image2
-![Login with Amazon Animation - iOS](/images/articles/compose-multiplatform-login-with-amazon/ezgif-3-3b0bc7bea9.gif)
+![Login with Amazon Animation - iOS](/images/articles/compose-multiplatform-login-with-amazon/ezgif-3-3b0bc7bea9.gif){quality="80" sizes="100vw sm:50vw md:400px lg:800px" preload}
 ::
 
 **Desktop**
 
-![Login with Amazon - JVM](/images/articles/compose-multiplatform-login-with-amazon/LwA-jvm.png)
+![Login with Amazon - JVM](/images/articles/compose-multiplatform-login-with-amazon/LwA-jvm.png){quality="80" sizes="100vw sm:50vw md:400px lg:800px" preload}
 
 ## Adding Amazon SDK To Android
 
@@ -932,11 +932,11 @@ We'll need to open XCode (Version 15.3 as of writing), and open `iosApp/iosApp.x
 2. Go to your project, select `General`
 3. Under `Frameworks, Libraries, and Embedded Content` click `+` (add) and add the following:
 
-    - SafariServices.framework (do not embed)
-    - Security.framework (do not embed)
-    - LoginWithAmazon.framework (do not embed)
+   - SafariServices.framework (do not embed)
+   - Security.framework (do not embed)
+   - LoginWithAmazon.framework (do not embed)
 
-   ![Add Frameworks](/images/articles/compose-multiplatform-login-with-amazon/ios-add-framework.png)
+   ![Add Frameworks](/images/articles/compose-multiplatform-login-with-amazon/ios-add-framework.png){quality="80" sizes="100vw sm:50vw md:400px lg:800px" preload}
 
 4. Under `Build Phases` go to `Embed Frameworks` and remove **LoginWithAmazon.framework** altogether.
 
@@ -960,7 +960,7 @@ to your app bundle identifier you listed under `General` -> `Identity` -> `Bundl
 
 Then under `Build Settings` -> `Code Signing Entitlements` add **`$(PROJECT_DIR)/iosApp/iosApp.entitlements`**
 
-![Entitlesment Location](/images/articles/compose-multiplatform-login-with-amazon/entitlements.png)
+![Entitlesment Location](/images/articles/compose-multiplatform-login-with-amazon/entitlements.png){quality="80" sizes="100vw sm:50vw md:400px lg:800px" preload}
 
 ### Adding API Key to Info.plist
 
