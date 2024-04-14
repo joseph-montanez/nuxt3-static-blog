@@ -1,5 +1,6 @@
+<script setup lang="ts">
+</script>
 <template>
-  <!-- Similar to <ContentDoc :path="$route.path" /> -->
   <ContentDoc v-slot="{ doc }">
     <NuxtLayout name="blog"
                 :title="doc.title"
@@ -20,7 +21,7 @@
     </NuxtLayout>
   </ContentDoc>
 </template>
-<style> /** Cannot use scoped CSS with Tailwind's @apply */
+<style>
 .markdown-content h1 {
   @apply text-4xl mt-5 font-bold text-gray-900;
 }
@@ -57,9 +58,12 @@
   @apply bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4
 }
 
-
 .markdown-content code {
-  @apply bg-blue-100 text-blue-800 font-mono text-sm px-2 py-1 rounded
+  @apply bg-gray-100 text-blue-800 font-mono text-sm px-2 py-1 rounded
+}
+
+.markdown-content pre code {
+  @apply block
 }
 
 .markdown-content ul {
@@ -74,6 +78,48 @@
   @apply text-blue-600 hover:text-blue-800 visited:text-purple-600
 }
 
+.markdown-content [class^="language-"]::before,
+.markdown-content [class*=" language-"]::before {
+  @apply block font-bold text-xs text-gray-700 font-sans;
+}
+
+.markdown-content .language-typescript::before {
+  content: "<Typescript>";
+}
+
+.markdown-content .language-javascript::before {
+  content: "<Javascript>";
+}
+
+.markdown-content .language-kotlin::before {
+  content: "<Kotlin>";
+}
+
+.markdown-content .language-xml::before {
+  content: "<Xml>";
+}
+
+.markdown-content .language-bash::before {
+  content: "<Bash>";
+}
+
+.markdown-content .language-toml::before {
+  content: "<Toml>";
+}
+
+.markdown-content .language-json::before {
+  content: "<Json>";
+}
+
+.markdown-content .language-dockerfile::before {
+  content: "<Dockerfile>";
+}
+
+.markdown-content .language-yaml::before {
+  content: "<Yaml>";
+}
+
+.markdown-content .language-php::before {
+  content: "<Php>";
+}
 </style>
-<script setup lang="ts">
-</script>
